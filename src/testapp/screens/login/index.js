@@ -1,5 +1,2 @@
-import LoginScreen from 'LoginScreen';
-
-export { 
-    LoginScreen
-};
+import LoginScreen from './LoginScreen';
+export { LoginScreen };

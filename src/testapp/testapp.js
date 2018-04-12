@@ -1,4 +1,5 @@
 import {
     LoginScreen,
-  } from './screens';
-  
+} from './screens';
+
+console.log("test app");
