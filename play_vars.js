@@ -6,13 +6,13 @@ if(x) {
 }
 console.log(zGlobal)
 
-function vartest() {
+function varTest() {
     let y = 1; 
     for (let i=0;i<10;i++) {
         let z = 123;
         var zFunctionScoped = "zFunctionScoped"
     }
-    // z is blockscoped above
+    // z is block scoped above
     // console.log(z)
     // zFunctionScoped is function scoped 
     console.log(zFunctionScoped)
@@ -24,24 +24,24 @@ console.log(x)
 // zFunctionScoped is not available here
 //console.log(zFunctionScoped)
 
-vartest() 
+varTest() 
 
 // const arrays are still mutable
 if (1 === 1) {
-    const arraytest = [1,2]
-    // can't assing to empty array to const
-    // arraytest = []
+    const arrayTest = [1,2]
+    // can't assign to empty array to const
+    // arrayTest = []
 
     // but you can still splice it... DOH!!!
-    arraytest.splice(0,arraytest.length)
-    arraytest.push(1,2)
+    arrayTest.splice(0,arrayTest.length)
+    arrayTest.push(1,2)
 
     // concat with method or ...
-    console.log(arraytest)
-    let newArray = arraytest.concat(3)
+    console.log(arrayTest)
+    let newArray = arrayTest.concat(3)
     console.log(newArray)
-    newArray = [...arraytest, 3]
+    newArray = [...arrayTest, 3]
     console.log(newArray)
-    newArray = [0, ...arraytest]
+    newArray = [0, ...arrayTest]
     console.log(newArray)
 }
